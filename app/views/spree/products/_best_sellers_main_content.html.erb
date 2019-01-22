@@ -1,3 +1,12 @@
+<section class="best-seller-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="titie-section wow fadeInDown animated ">
+          <h1><%= Spree.t('best_sellers.title')%></h1>
+        </div>
+      </div>
+    </div>
 <% config = Spree::BestSellersConfiguration.new %>
 <% if (config.has_preference?(:show_best_sellers) && config[:show_best_sellers]) && @best_sellers.present? %>
     <div id="best-sellers" data-hook>
@@ -36,3 +45,5 @@
       <% reset_cycle("classes") %>
     </div>
 <% end %>
+</div>
+</section>
